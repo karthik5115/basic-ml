@@ -1,0 +1,170 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMI5WCpUxW4eCG1T19rfDZF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/karthik5115/basic-ml/blob/main/three%20useful%20programs\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "qNcGkRA2DRKF"
+      },
+      "source": [
+        "# threee useful programms"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UCLVgN1xFyYA"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9qHKQ0yWFqB1"
+      },
+      "source": [
+        "1 to find large number in a list"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HiD0NhN2DbWS",
+        "outputId": "a754faa0-4748-4ab6-de46-fa5695236518"
+      },
+      "source": [
+        "list = [5,9,847,6594,77]\n",
+        "lar = list[0]\n",
+        "for i in list:\n",
+        "    if (i>lar):\n",
+        "        lar = i\n",
+        "print(lar)"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "6594\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "AJHg3xkLEiYS"
+      },
+      "source": [
+        "2 gcd of a number"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kKnIRVsyE6fz",
+        "outputId": "b55295e7-2a3d-4a22-ad75-c5e1884fbcfe"
+      },
+      "source": [
+        "a = int(input(\"enter a number\"))\n",
+        "b = int(input(\"enter b number\"))\n",
+        "if(a<b):\n",
+        "    small = a\n",
+        "else:\n",
+        "    small = b\n",
+        "for i in range(1,small+1):\n",
+        "    if (a%i==0) and (b%i==0):\n",
+        "        g = i\n",
+        "print(g)\n"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter a number6\n",
+            "enter b number12\n",
+            "6\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vS6NYwoBFJp4"
+      },
+      "source": [
+        "3 weight converter"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NOZOlclZF_Gc",
+        "outputId": "364306da-6f9f-4f01-d541-97e1c41b9801"
+      },
+      "source": [
+        "weight = int(input(\"what is your weight :\"))\n",
+        "units = input(\"k for kgs & g for grams\").upper()\n",
+        "if (units == 'K') :\n",
+        "    print(weight*1000 ,\"grams\")\n",
+        "elif (units == 'G') :\n",
+        "    print(weight/1000,\"kgs\")\n",
+        "else:\n",
+        "    print(\"invalid units\")\n"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "what is your weight :50\n",
+            "k for kgs & g for gramsk\n",
+            "50000 grams\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
